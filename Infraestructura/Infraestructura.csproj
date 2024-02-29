@@ -56,8 +56,14 @@
     <Compile Include="Migrations\202402280403149_MapeoInicial.designer.cs">
       <DependentUpon>202402280403149_MapeoInicial.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202402281854278_Localidad.cs" />
+    <Compile Include="Migrations\202402281854278_Localidad.designer.cs">
+      <DependentUpon>202402281854278_Localidad.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Repositorio\Repositorio.cs" />
+    <Compile Include="UnidadDeTrabajo\UnidadDeTrabajo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
@@ -76,6 +82,9 @@
   <ItemGroup>
     <EmbeddedResource Include="Migrations\202402280403149_MapeoInicial.resx">
       <DependentUpon>202402280403149_MapeoInicial.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202402281854278_Localidad.resx">
+      <DependentUpon>202402281854278_Localidad.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

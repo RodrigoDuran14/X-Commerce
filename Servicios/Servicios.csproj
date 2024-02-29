@@ -59,6 +59,14 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\Dominio\Dominio.csproj">
+      <Project>{31870C69-D7DB-486E-BED1-AA189E7F46E8}</Project>
+      <Name>Dominio</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Infraestructura\Infraestructura.csproj">
+      <Project>{6A550383-A01A-4B9C-B946-21984331AFBD}</Project>
+      <Name>Infraestructura</Name>
+    </ProjectReference>
     <ProjectReference Include="..\IServicios\IServicios.csproj">
       <Project>{6266ACC2-AB85-4DCD-9C6A-DC335173092C}</Project>
       <Name>IServicios</Name>

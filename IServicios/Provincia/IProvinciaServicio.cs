@@ -8,7 +8,7 @@ namespace IServicios.Provincia
         void Insert(ProvinciaDto dto);
         void Delete(long id);
         void Update(ProvinciaDto dto);
-        IEnumerable<ProvinciaDto> GetByName(string cadenaBuscar);
-        ProvinciaDto GetById(long id);
+        IEnumerable<ProvinciaDto> Get(string cadenaBuscar);
+        ProvinciaDto Get(long id);
     }
 }
