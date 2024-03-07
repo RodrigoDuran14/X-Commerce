@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Presentacion.Core.Provincia;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -15,6 +16,13 @@ namespace CommerceApp
         public Principal()
         {
             InitializeComponent();
+        }
+
+        private void consultaToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            var fprov = new FormProvincia();
+
+            fprov.ShowDialog();
         }
     }
 }
