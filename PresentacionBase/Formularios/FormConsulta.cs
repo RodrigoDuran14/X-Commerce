@@ -30,6 +30,14 @@ namespace PresentacionBase.Formularios
             
         }
 
+        public virtual void FormatearGrilla(DataGridView dgv)
+        {
+            for(int i = 0; i< dgv.ColumnCount; i++)
+            {
+                dgv.Columns[i].Visible = false;
+            }
+        }
+
         private void btnBuscar_Click(object sender, EventArgs e)
         {
             ActualizarDatos(dgvGrilla, txtBuscar.Text);

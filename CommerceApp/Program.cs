@@ -1,7 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
+﻿using Aplicacion.IoC;
+using System;
 using System.Windows.Forms;
 
 namespace CommerceApp
@@ -14,6 +12,9 @@ namespace CommerceApp
         [STAThread]
         static void Main()
         {
+            //configuracion del inyector (structure map)
+            new StructureMapContainer().Configure();
+
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             Application.Run(new Principal());

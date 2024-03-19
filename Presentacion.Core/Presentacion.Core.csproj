@@ -70,6 +70,10 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\IServicios\IServicios.csproj">
+      <Project>{6266ACC2-AB85-4DCD-9C6A-DC335173092C}</Project>
+      <Name>IServicios</Name>
+    </ProjectReference>
     <ProjectReference Include="..\PresentacionBase\PresentacionBase.csproj">
       <Project>{24CB1BE2-862F-475B-98BD-C305129F2EDF}</Project>
       <Name>PresentacionBase</Name>

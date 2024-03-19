@@ -1,4 +1,5 @@
 ﻿using Presentacion.Core.Provincia;
+using StructureMap;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -20,7 +21,7 @@ namespace CommerceApp
 
         private void consultaToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            var fprov = new FormProvincia();
+            var fprov = ObjectFactory.GetInstance<FormProvincia>();
 
             fprov.ShowDialog();
         }
